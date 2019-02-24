@@ -1,3 +1,8 @@
+/* Copyright (C) 2019 hnqiu
+ * Licensed under the MIT License. See LICENSE for details.
+ */
+
+
 #ifndef CPP_SIZEOF_TEST_H
 #define CPP_SIZEOF_TEST_H
 
