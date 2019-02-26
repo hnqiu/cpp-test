@@ -17,7 +17,8 @@ int main(int argc, char *argv[]) {
     //continue_test();
     //return_list_test();
     //return_pointer_to_array_test();
-    class_test();
+    //class_test();
+    smart_ptr_test();
     
     return 0;
 }

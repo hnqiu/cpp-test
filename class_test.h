@@ -13,6 +13,7 @@
 // #define CPP_CLASS_TEST_H
 
 int class_test();
+int smart_ptr_test();
 
 class an_agent
 {
