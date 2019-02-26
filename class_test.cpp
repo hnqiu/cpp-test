@@ -1,3 +1,8 @@
+/* Copyright (C) 2019 hnqiu
+ * Licensed under the MIT License. See LICENSE for details.
+ */
+
+
 #include <iostream>
 #include "class_test.h"
 
