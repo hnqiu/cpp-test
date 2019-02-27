@@ -27,12 +27,16 @@ public:
     // functions defined in the class are implicitly inline
 
     // use constructor initialization instead of assignment
-    an_agent(int aid, double f): agt_id(aid), fit(f) {}
+    an_agent(int aid, double f): agt_id(aid), fit(f) {
+        std::cout << "Constructing class\n";
+    }
     // use delegating constructor
     an_agent(int aid): an_agent(aid, .0) {}
-    an_agent(): an_agent(0, .0) {};
+    an_agent(): an_agent(0, .0) {}
 
-    //~an_agent();
+    ~an_agent() {
+        std::cout << "Destructing class\n";
+    }
 
     // return reference to *this
     an_agent &set_agent(int aid);
