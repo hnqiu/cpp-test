@@ -10,6 +10,7 @@
 #include "return_list_test.h"
 #include "return_pointer_to_array_test.h"
 #include "class_test.h"
+#include "cons_des.h"
 
 int main(int argc, char *argv[]) {
     //string_test();
@@ -18,7 +19,8 @@ int main(int argc, char *argv[]) {
     //return_list_test();
     //return_pointer_to_array_test();
     //class_test();
-    smart_ptr_test();
+    //smart_ptr_test();
+    cons_des();
     
     return 0;
 }
