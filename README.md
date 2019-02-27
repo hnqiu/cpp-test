@@ -17,3 +17,4 @@ g++ -o cpp-test.run *.cpp -std=c++11
 - [A function that returns a pointer to an array](return_pointer_to_array_test.h)
 - [C++ class test](class_test.cpp)
 - [Smart pointer test](smart_ptr_test.cpp)
+- [Class constructor and destructor, assignment operation](cons_des.cpp)
