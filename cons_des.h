@@ -40,7 +40,8 @@ public:
         std::cout << "Use copy constructor\n";
     }
 
-    //agent_type &operator=(const agent_type &agt);
+    // copy-assignment operator
+    inline agent_type &operator=(const agent_type &agt);
 
     // destructor
     ~agent_type() { 
@@ -54,6 +55,18 @@ public:
 
     inline std::vector<double> *get_err();
 };
+
+agent_type &agent_type::operator=(const agent_type &agt) {
+    std::cout << "Use copy-assignment constructor\n";
+    agt_id = agt.agt_id;
+    // agt may be the object itself
+    // so we need a copy of errs first
+    auto tmp_err = new std::vector<double>(*agt.errs);
+    delete errs; // then free old memory
+    errs = tmp_err; // and assign new pointer
+
+    return *this;
+}
 
 std::vector<double> *agent_type::get_err() {
     return errs;

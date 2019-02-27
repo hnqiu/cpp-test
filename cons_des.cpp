@@ -15,10 +15,10 @@ int cons_des() {
     std::cout << std::endl;
 
     std::vector<decltype(agt)> agents;
-    agents.push_back(agt); // call copy constructor
-
+    auto new_agt = agt; // call copy constructor
+    new_agt = agt; // call copy-assignment constructor
+    agents.push_back(new_agt); // call copy constructor
 
     return 0;
 }
 
-//push_back
