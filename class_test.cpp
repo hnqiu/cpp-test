@@ -31,4 +31,6 @@ int class_test() {
     cout << "agent fitness is changed to " << agt->get_fit() << endl;
 
     delete agt;
+
+    return 0;
 }
