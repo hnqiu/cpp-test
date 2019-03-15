@@ -11,6 +11,7 @@
 #include "return_pointer_to_array_test.h"
 #include "class_test.h"
 #include "cons_des.h"
+#include "inheritance_test.h"
 
 int main(int argc, char *argv[]) {
     //string_test();
@@ -20,7 +21,8 @@ int main(int argc, char *argv[]) {
     //return_pointer_to_array_test();
     //class_test();
     //smart_ptr_test();
-    cons_des();
+    //cons_des();
+    inheritance_test();
     
     return 0;
 }
