@@ -12,6 +12,7 @@
 #include "class_test.h"
 #include "cons_des.h"
 #include "inheritance_test.h"
+#include "template_test.h"
 
 int main(int argc, char *argv[]) {
     //string_test();
@@ -22,7 +23,8 @@ int main(int argc, char *argv[]) {
     //class_test();
     //smart_ptr_test();
     //cons_des();
-    inheritance_test();
+    //inheritance_test();
+    template_test();
     
     return 0;
 }

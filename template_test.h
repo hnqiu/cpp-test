@@ -5,16 +5,32 @@
 
 #pragma once
 
+#include <vector>
 #include "inheritance_test.h"
+
+int template_test();
 
 template <typename T>
 class Network
 {
-private:
-    /* data */
 public:
-    Network(/* args */);
-    ~Network();
+    /* data */
+    std::vector<T> neurons;
+    
+    typedef typename std::vector<T>::size_type size_type;
+
+    Network() = default;
+    ~Network() {
+        #ifndef NDEBUG
+        std::cout << "Deleting neurons..." << std::endl;
+        #endif
+        for (auto n : neurons) {
+            delete n;
+        }
+    }
+
+    void push_back(const T &t) { neurons.push_back(t); }
+    size_type size() const { return neurons.size(); }
 };
 
 
