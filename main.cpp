@@ -24,7 +24,8 @@ int main(int argc, char *argv[]) {
     //smart_ptr_test();
     //cons_des();
     //inheritance_test();
-    template_test();
+    //template_test();
+    template_test_v2();
     
     return 0;
 }
