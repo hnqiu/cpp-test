@@ -21,7 +21,11 @@ private:
     int n_id;
 public:
     Neuron(const int &nid) : n_id(nid) { }
-    ~Neuron() = default;
+    virtual ~Neuron() {
+        #ifndef NDEBUG
+        std::cout << "Destructing Base Neuron..." << std::endl;
+        #endif
+    }
 
     virtual double activate() = 0;
 };
@@ -35,7 +39,11 @@ private:
 public:
     SigmNeuron(const int &nid): Neuron(nid), inp(), outp() { }
     SigmNeuron() : SigmNeuron(0) { }
-    ~SigmNeuron() = default;
+    ~SigmNeuron() override {
+        #ifndef NDEBUG
+        std::cout << "Destructing Derived SigmNeuron..." << std::endl;
+        #endif
+    }
 
     void set_input(const double &val) {
         inp = val;
