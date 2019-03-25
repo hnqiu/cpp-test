@@ -10,10 +10,10 @@ using std::cout;
 using std::endl;
 
 // static member initialized outside the class body
-int an_agent::class_id = 1;
+int Agent::class_id = 1;
 
 // functions that are not inline should be defined in src file
-void set_fit(an_agent *agt, double f) {
+void set_fit(Agent *agt, double f) {
     agt->fit = f;
 }
 
@@ -21,7 +21,7 @@ void set_fit(an_agent *agt, double f) {
 int class_test() {
     int aid = 0;
 
-    an_agent *agt = new an_agent(1);
+    Agent *agt = new Agent(1);
     cout << "agent id is " << agt->get_id() << endl;
     aid = agt->set_agent(2).get_id();
     cout << "agent id is changed to " << aid << endl;

@@ -15,9 +15,9 @@
 int class_test();
 int smart_ptr_test();
 
-class an_agent
+class Agent
 {
-    friend void set_fit(an_agent *agt, double f);
+    friend void set_fit(Agent *agt, double f);
 private:
     /* data */
     static int class_id;
@@ -27,23 +27,23 @@ public:
     // functions defined in the class are implicitly inline
 
     // use constructor initialization instead of assignment
-    an_agent(int aid, double f): agt_id(aid), fit(f) {
+    Agent(int aid, double f): agt_id(aid), fit(f) {
         std::cout << "Constructing class\n";
     }
     // use delegating constructor
-    an_agent(int aid): an_agent(aid, .0) {}
-    an_agent(): an_agent(0, .0) {}
+    Agent(int aid): Agent(aid, .0) {}
+    Agent(): Agent(0, .0) {}
 
-    ~an_agent() {
+    ~Agent() {
         std::cout << "Destructing class\n";
     }
 
     // return reference to *this
-    an_agent &set_agent(int aid);
+    Agent &set_agent(int aid);
 
     // return reference to const *this
     // this function is useless, just a demonstration
-    const an_agent &get_agent() const { return *this; }
+    const Agent &get_agent() const { return *this; }
 
     // const member function
     // explicit inline
@@ -52,16 +52,16 @@ public:
 };
 
 // explicit inline
-inline an_agent &an_agent::set_agent(int aid) {
+inline Agent &Agent::set_agent(int aid) {
     agt_id = aid;
     return *this;
 }
 
-const double an_agent::get_id() const {
+const double Agent::get_id() const {
     return agt_id;
 }
 
-const double an_agent::get_fit() const {
+const double Agent::get_fit() const {
     return fit;
 }
 
