@@ -13,6 +13,7 @@
 #include "cons_des.h"
 #include "inheritance_test.h"
 #include "template_test.h"
+#include "operator_test.h"
 
 int main(int argc, char *argv[]) {
     //string_test();
@@ -25,7 +26,8 @@ int main(int argc, char *argv[]) {
     //cons_des();
     //inheritance_test();
     //template_test();
-    template_test_v2();
+    //template_test_v2();
+    operator_test();
     
     return 0;
 }
