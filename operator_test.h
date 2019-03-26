@@ -38,5 +38,7 @@ public:
         return fit < agt.fit;
     }
 
+    size_t getID() { return a_id; }
+    double getFit() { return fit; }
     void setFit(const double &f) { fit = f; }
 };

@@ -14,6 +14,7 @@
 #include "inheritance_test.h"
 #include "template_test.h"
 #include "operator_test.h"
+#include "predicate_test.h"
 
 int main(int argc, char *argv[]) {
     //string_test();
@@ -27,7 +28,8 @@ int main(int argc, char *argv[]) {
     //inheritance_test();
     //template_test();
     //template_test_v2();
-    operator_test();
+    //operator_test();
+    predicate_test();
     
     return 0;
 }

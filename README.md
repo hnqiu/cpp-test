@@ -21,4 +21,5 @@ g++ *.cpp -o cpp-test.run -std=c++11
 - [Class constructor and destructor, assignment operation](cons_des.cpp)
 - [Using inheritance and virtual functions](inheritance_test.cpp)
 - [Using templates](template_test.cpp)
-
+- [Using overloaded operators](operator_test.cpp)
+- [Using predicates](predicate_test.cpp)
