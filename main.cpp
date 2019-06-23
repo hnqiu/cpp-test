@@ -15,6 +15,7 @@
 #include "template_test.h"
 #include "operator_test.h"
 #include "predicate_test.h"
+#include "bitset_test.h"
 
 int main(int argc, char *argv[]) {
     //string_test();
@@ -29,7 +30,8 @@ int main(int argc, char *argv[]) {
     //template_test();
     //template_test_v2();
     //operator_test();
-    predicate_test();
+    // predicate_test();
+    bitset_test();
     
     return 0;
 }
