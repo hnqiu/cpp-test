@@ -8,4 +8,5 @@
 #include <iostream>
 #include <bitset>
 
+/* @brief: bitset test */
 int bitset_test();
