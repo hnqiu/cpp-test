@@ -16,6 +16,7 @@
 #include "operator_test.h"
 #include "predicate_test.h"
 #include "bitset_test.h"
+#include "clock_test.h"
 
 int main(int argc, char *argv[]) {
     //string_test();
@@ -32,6 +33,8 @@ int main(int argc, char *argv[]) {
     //operator_test();
     // predicate_test();
     bitset_test();
+    c_clock_test();
+    cpp_clock_test();
     
     return 0;
 }
