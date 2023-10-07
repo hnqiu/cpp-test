@@ -11,6 +11,7 @@ void foo()
 int main(int argc, char* argv[])
 {
     std::thread t(foo);
-    // t.join();
+    // if not joint, program will be terminated
+    t.join();
     std::cout << "main complete\n";
 }
